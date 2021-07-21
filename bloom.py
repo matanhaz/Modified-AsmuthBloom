@@ -147,7 +147,7 @@ class AsmuthBloom(object):
         if self.s == 0:
             print(
                 "calculation of additions and multiplications are not guaranteed and might fail, please choose different amount of operations...")
-            #sys.exit(1)
+            sys.exit(1)
         self.shares = []
         for m_i in m:
             self.shares.append((self._y % m_i, m_i))
